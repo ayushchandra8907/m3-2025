@@ -20,19 +20,19 @@ All results, discussion and full technical details are in the PDF report.
 
 ## Methods Overview
 
-### Part I (First_Problem.py)
+### Part I (problem1.py)
 - **Data & Preprocessing:** Loaded outdoor temperature time series for a 24‑hour heat wave.  
 - **Sinusoidal Fit:** Used a fixed‑frequency sinusoidal model (daily cycle) to approximate outdoor temperature.  
 - **Heat‑Transfer Model:** Applied Newton’s Law of Cooling to couple outdoor and indoor temperatures, fitting the heat‑transfer coefficient for each house.  
 - **Output & Visualization:** Extracted best‑fit parameters, plotted both observed and predicted indoor temperatures for four representative homes.
 
-### Part II (Second_Problem.py)
+### Part II (problem2.py)
 - **Population & Climate Trends:** Fitted separate linear regression models to historical population data and cooling‑degree days.  
 - **Per‑Person Consumption:** Modeled energy use per capita via linear regression on past energy records.  
 - **Electric‑Vehicle Adoption:** Fitted a logistic curve to EV registration data to project penetration over time.  
 - **Demand Forecast:** Combined forecasts (population × cooling × per‑person use × EV factor) to simulate weekly summer demand for the next 30 years. Plotted the resulting time series.
 
-### Part III (Third_Problem.py)
+### Part III (problem3.py)
 - **Data Integration:** Merged neighborhood census and housing data into a single table.  
 - **Factor Selection:** Identified six key drivers: median income, fraction aged 65+, predicted peak indoor temperature, access to healthcare (distance‑based), vehicle ownership rate, and workforce participation.  
 - **Composite Scoring & Sensitivity Analysis:**  
